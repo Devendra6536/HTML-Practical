@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+           /* p::first-line
+            {
+                font-size: 24pt;
+                text-transform: uppercase;
+            }
+            p::selection{
+                background-color: yellow;
+            } 
+            p::before{
+                content: " hello ";
+
+            } 
+            p::after{
+                content: "Garhikhanpur badaun";
+            }
+            p::before{
+                content: open-quote;
+            }
+            p::after{
+                content: close-quote;
+            }
+            ul{
+                list-style: none;
+            }
+            li::before{
+                content: url("image/download.png");
+            } */
+              .xyz/*(0,0,1,0)*/
+              {
+                  border: 2px solid yellow;
+              }
+          p/*(0,0,0,1)*/
+            {
+               border: 2px solid red;
+            }
+            body > p/*(0,0,0,2)*/
+            {
+                border: 2px solid blue;
+            }
+            p.xyz/*(0,0,1,1)*/
+            {
+                border: 2px solid green;
+            }
+            
+          body >  p.xyz/*(0,0,1,2)*/
+            {
+                border: 2px solid pink;
+                border-radius: 25px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <ul>
+           <p class="xyz" style="border: 8px solid blue;">Paragraph text</p>
+        </ul>
+    </body>
+</html>
